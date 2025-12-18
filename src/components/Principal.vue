@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div v-if="!ganador">
+        <div v-if="!gandor">
             <div v-if="tieneIntentos">
                 <div class="puntajes">
                     <h1>Puntaje: {{ puntaje }}</h1>
@@ -23,7 +23,7 @@
             <button v-on:click="nuevojuego()">Nuevo Juego</button>
         </div>
 
-        <div class="ganaste" v-if="ganador">
+        <div class="ganaste" v-if="gandor">
             <h1>Puntaje: {{ puntaje }}</h1>
             <h1> Felicitaciones has ganado un premio de $10.000,00</h1>
             <button v-on:click="nuevojuego()">Nuevo Juego</button>
@@ -52,7 +52,7 @@ export default {
             puntaje: 0,
             intento: 0,
             tieneIntentos: true,
-            ganador: false,
+            gandor: false,
         }
     },
     methods: {

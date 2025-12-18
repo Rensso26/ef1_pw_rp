@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const Pokemones = [3, 4, 5, 6, 7];
+const Pokemones = [3];
 
 function obtenerNumero() {
     return Pokemones[Math.floor(Math.random() * Pokemones.length)];
